@@ -44,7 +44,7 @@ with open('notes.json', 'r', encoding='utf-8') as f:
 
 
 def print_data_line():  # выводим данные из файла с заметками в терминал
-    n = int(input('Enter note number to print: '))
+    n = int(input('Enter note number to print: '))-1
 
     with open('notes.json', 'r', encoding='utf-8') as f:
         if n not in range(
